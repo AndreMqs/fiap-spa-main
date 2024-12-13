@@ -19,7 +19,7 @@ export default function Header(props: HeaderProps) {
     return (
       <span className={styles.userNameContainer}>
         <span className={styles.userName}>Joana da Silva Oliveira</span>
-        <Avatar alt='Avatar' height={40} width={40}/>
+        <Avatar height={40} width={40}/>
       </span>
     );
   }
@@ -30,7 +30,7 @@ export default function Header(props: HeaderProps) {
         <IconButton onClick={() => setIsMenuOpen(true)}>
           <MenuIcon className={styles.menuIcon}/>
         </IconButton>
-        <Fechar alt='Avatar' height={40} width={40}/>
+        <Fechar height={40} width={40}/>
       </div>
     );
   }
@@ -41,7 +41,6 @@ export default function Header(props: HeaderProps) {
         <div className={styles.mobileMenu}>
           <span className={styles.closeButton}>
             <Fechar 
-              alt='Fechar'
               height={16}
               width={16}
             />

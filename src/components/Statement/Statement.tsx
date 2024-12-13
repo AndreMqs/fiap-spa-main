@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import {ReactComponent as IconButton} from '@mui/material/IconButton';
-import {ReactComponent as Delete} from "@/app/images/Delete.svg";
-import {ReactComponent as Edit} from "@/app/images/Edit.svg";
+import IconButton from '@mui/material/IconButton';
+import {ReactComponent as Delete} from "../../images/Delete.svg";
+import {ReactComponent as Edit} from "../../images/Edit.svg";
 import StatementList from './StatementList/StatementList';
 
 import { getStatementByMonth } from '../../utils/statementUtils';
@@ -50,14 +50,12 @@ export default function Statement(props: StatementProps) {
         <span className={styles.headerButtonsContainer}>
           <IconButton className={styles.headerButton} onClick={() => setIsEditing(!isEditing)}>
             <Edit 
-              alt="Editar"
               height={22}
               width={22}
             />
           </IconButton>
           <IconButton className={styles.headerButton}>
             <Delete 
-              alt="Remover"
               height={40}
               width={40}
             />

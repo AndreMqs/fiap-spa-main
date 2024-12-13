@@ -44,7 +44,6 @@ export default function Summary(props: SummaryProps) {
             Saldo
           </span>
           <Eye 
-            alt='eye'
             height={20}
             width={20}
             onClick={() => setIsBalanceVisible(!isBalanceVisible)}

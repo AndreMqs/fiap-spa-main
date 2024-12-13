@@ -19,14 +19,16 @@ export default function StatementList(props: SingleStatementProps) {
   }
 
   return (
-    Array.from(statementsByMonth.keys()).map((month, index) => (
-      <div key={index}>
-        <span className={styles.month}>{capitalize(month)}</span>
-        <div className={styles.listContainer}>
-          {renderSingleStatement(month)}
+    <>
+      {Array.from(statementsByMonth.keys()).map((month, index) => (
+        <div key={index}>
+          <span className={styles.month}>{capitalize(month)}</span>
+          <div className={styles.listContainer}>
+            {renderSingleStatement(month)}
+          </div>
         </div>
-      </div>
-    ))
+      ))}
+    </>
   );
 }
 
